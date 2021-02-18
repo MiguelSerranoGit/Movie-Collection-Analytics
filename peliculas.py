@@ -93,7 +93,7 @@ def check_csv(option):
 
 def search_movie():
     print('Type the title of the movie you want to search for')
-    url_first_part = 'https://api.themoviedb.org/3/search/movie?api_key=fd747c1c11aba3eda64c8214357c4823&language=es' \
+    url_first_part = 'https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&language=es' \
                      '&query= '
     query = input()
     if query.__contains__(' '):
@@ -122,7 +122,7 @@ def search_movie():
             print('\nOk, so copy its ID to use it in the search:')
             id_movie = input()
             url_start1 = 'https://api.themoviedb.org/3/movie/' + str(id_movie)
-            url_final1 = '?api_key=fd747c1c11aba3eda64c8214357c4823&language=es'
+            url_final1 = '?api_key=YOUR_API_KEY&language=es'
             url_completed1 = url_start1 + url_final1
             movie_request1 = requests.get(url_completed1)
             search_result = json.loads(movie_request1.content)
@@ -140,7 +140,7 @@ def search_movie():
         print('\nCopy the ID of the film to use it in your search:')
         id_movie = input()
         url_start1 = 'https://api.themoviedb.org/3/movie/' + str(id_movie)
-        url_final1 = '?api_key=fd747c1c11aba3eda64c8214357c4823&language=es'
+        url_final1 = '?api_key=YOUR_API_KEY&language=es'
         url_completed1 = url_start1 + url_final1
         movie_request1 = requests.get(url_completed1)
         search_result = json.loads(movie_request1.content)
