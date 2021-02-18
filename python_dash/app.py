@@ -16,10 +16,13 @@ sorted_years = sorted(years, reverse=False)
 data_grouped_by_year = data.groupby('YEAR').mean()
 mean_score_year = []
 mean_gross_year = []
+mean_budget_year = []
 for element in data_grouped_by_year['SCORE']:
     mean_score_year.append(element)
 for element in data_grouped_by_year['GROSS']:
     mean_gross_year.append(element)
+for element in data_grouped_by_year['BUDGET']:
+    mean_budget_year.append(element)
 
 data_grouped_by_year = data.groupby('YEAR').count()
 number_movies = []
@@ -42,7 +45,7 @@ app.layout = html.Div(
             children=[
                 html.P(children="🥑", className="header-emoji"),
                 html.H1(
-                    children="Movie Analytics: Understand Your Favourite Movies!", className="header-title"
+                    children="Movie Analytics: Understand Your ¿Favourite? Movies!", className="header-title"
                 ),
                 html.P(
                     children="Analyze the behavior of movie ratings between 1980 and 2030",
@@ -130,10 +133,17 @@ app.layout = html.Div(
                                     "hovertemplate": "%{y:.2f}"
                                                      "<extra></extra>",
                                 },
+{
+                                    "x": sorted_years,
+                                    "y": mean_budget_year,
+                                    "type": "lines",
+                                    "hovertemplate": "%{y:.2f}"
+                                                     "<extra></extra>",
+                                },
                             ],
                             "layout": {
                                 "title": {
-                                    "text": "Average Gross of Movies",
+                                    "text": "Average Gross vs Budget of Movies",
                                     "x": 0.05,
                                     "xanchor": "left",
                                 },
@@ -215,6 +225,11 @@ def update_charts(avocado_type, start_date, end_date):
     for element4 in data_filtered_grouped_by_year['GROSS']:
         mean_gross_year_filtered.append(element4)
 
+    data_filtered_grouped_by_year = filtered_data.groupby('YEAR').mean()
+    mean_budget_year_filtered = []
+    for element5 in data_filtered_grouped_by_year['BUDGET']:
+        mean_budget_year_filtered.append(element5)
+
     data_grouped_by_year_filtered = filtered_data.groupby('YEAR').count()
     number_movies_filtered = []
     for element3 in data_grouped_by_year_filtered['SCORE']:
@@ -247,18 +262,26 @@ def update_charts(avocado_type, start_date, end_date):
                 "x": sorted_years_filtered,
                 "y": mean_gross_year_filtered,
                 "type": "lines",
+                'name': 'Mean Gross',
+                "hovertemplate": "%{y:.2f}<extra></extra>",
+            },
+            {
+                "x": sorted_years_filtered,
+                "y": mean_budget_year_filtered,
+                "type": "lines",
+                'name': 'Mean Budget',
                 "hovertemplate": "%{y:.2f}<extra></extra>",
             },
         ],
         "layout": {
             "title": {
-                "text": "Average Gross of Movies",
+                "text": "Average Gross vs Budget of Movies",
                 "x": 0.05,
                 "xanchor": "left",
             },
             "xaxis": {"fixedrange": True},
             "yaxis": {"fixedrange": True},
-            "colorway": ["#4661af"],
+            "colorway": ["#4661af", "#a361af"],
         },
     }
 
