@@ -15,25 +15,29 @@ def home():
           '\t2) Search for a movie in my collection\n'
           '\t3) Exit\n'
           'Enter an option:')
-    menu(int(input()))
+    try:
+        menu(int(input()))
+    except:
+        print("The option you have chosen is not valid. Do it again")
+        home()
 
 
 def menu(option):
-    while option != str(1) or option != str(2) or option != str(3):
-        if option == 1:
-            print('''You have chosen the option 'Search for a movie in the database'  ''')
-            search_movie()
-        elif option == 2:
-            print('''You have chosen the option 'Search for a movie in my collection' ''')
-            search_movie_in_my_collection()
-        elif option == 3:
-            print('''You have chosen the option 'Exit'
-            \nWe are creating the excel, making it pretty and making the graphs. Then everything will be ready ''')
-            convert_csv_into_excel()
-            charts()
-            highlight_excel()
-            print('¡See you soon!')
-            exit(0)
+    if option == 1:
+        print('''You have chosen the option 'Search for a movie in the database'  ''')
+        search_movie()
+    elif option == 2:
+        print('''You have chosen the option 'Search for a movie in my collection' ''')
+        search_movie_in_my_collection()
+    elif option == 3:
+        print('''You have chosen the option 'Exit'
+        \nWe are creating the excel, making it pretty and making the graphs. Then everything will be ready ''')
+        convert_csv_into_excel()
+        charts()
+        highlight_excel()
+        print('¡See you soon!')
+        exit(0)
+    else:
         print('The option you have chosen is not valid. Do it again')
         home()
 
