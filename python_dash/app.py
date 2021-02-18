@@ -2,9 +2,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
-import numpy as np
 from dash.dependencies import Output, Input
-
 
 # https://realpython.com/python-dash/
 data = pd.read_csv("collection.csv")
@@ -17,8 +15,11 @@ sorted_years = sorted(years, reverse=False)
 
 data_grouped_by_year = data.groupby('YEAR').mean()
 mean_score_year = []
+mean_gross_year = []
 for element in data_grouped_by_year['SCORE']:
     mean_score_year.append(element)
+for element in data_grouped_by_year['GROSS']:
+    mean_gross_year.append(element)
 
 data_grouped_by_year = data.groupby('YEAR').count()
 number_movies = []
@@ -88,7 +89,7 @@ app.layout = html.Div(
             children=[
                 html.Div(
                     children=dcc.Graph(
-                        id="price-chart",
+                        id="rating-chart",
                         config={"displayModeBar": False},
                         figure={
                             "data": [
@@ -96,7 +97,7 @@ app.layout = html.Div(
                                     "x": sorted_years,
                                     "y": mean_score_year,
                                     "type": "lines",
-                                    "hovertemplate": "$%{y:.2f}"
+                                    "hovertemplate": "%{y:.2f}"
                                                      "<extra></extra>",
                                 },
                             ],
@@ -109,6 +110,35 @@ app.layout = html.Div(
                                 "xaxis": {"fixedrange": True},
                                 "yaxis": {
                                     "fixedrange": True,
+                                },
+                                "colorway": ["#17B897"],
+                            },
+                        },
+                    ),
+                    className="card",
+                ),
+                html.Div(
+                    children=dcc.Graph(
+                        id="gross-chart",
+                        config={"displayModeBar": False},
+                        figure={
+                            "data": [
+                                {
+                                    "x": sorted_years,
+                                    "y": mean_gross_year,
+                                    "type": "lines",
+                                    "hovertemplate": "%{y:.2f}"
+                                                     "<extra></extra>",
+                                },
+                            ],
+                            "layout": {
+                                "title": {
+                                    "text": "Average Gross of Movies",
+                                    "x": 0.05,
+                                    "xanchor": "left",
+                                },
+                                "xaxis": {"fixedrange": True},
+                                "yaxis": {"fixedrange": True,
                                 },
                                 "colorway": ["#17B897"],
                             },
@@ -152,7 +182,7 @@ app.layout = html.Div(
 
 
 @app.callback(
-    [Output("price-chart", "figure"), Output("volume-chart", "figure")],
+    [Output("rating-chart", "figure"), Output("gross-chart", "figure"), Output("volume-chart", "figure")],
     [
         Input("type-filter", "value"),
         Input("date-range", "start_date"),
@@ -180,12 +210,17 @@ def update_charts(avocado_type, start_date, end_date):
     for element2 in data_filtered_grouped_by_year['SCORE']:
         mean_score_year_filtered.append(element2)
 
+    data_filtered_grouped_by_year = filtered_data.groupby('YEAR').mean()
+    mean_gross_year_filtered = []
+    for element4 in data_filtered_grouped_by_year['GROSS']:
+        mean_gross_year_filtered.append(element4)
+
     data_grouped_by_year_filtered = filtered_data.groupby('YEAR').count()
     number_movies_filtered = []
     for element3 in data_grouped_by_year_filtered['SCORE']:
         number_movies_filtered.append(element3)
 
-    price_chart_figure = {
+    rating_chart_figure = {
         "data": [
             {
                 "x": sorted_years_filtered,
@@ -203,6 +238,27 @@ def update_charts(avocado_type, start_date, end_date):
             "xaxis": {"fixedrange": True},
             "yaxis": {"fixedrange": True},
             "colorway": ["#17B897"],
+        },
+    }
+
+    gross_chart_figure = {
+        "data": [
+            {
+                "x": sorted_years_filtered,
+                "y": mean_gross_year_filtered,
+                "type": "lines",
+                "hovertemplate": "%{y:.2f}<extra></extra>",
+            },
+        ],
+        "layout": {
+            "title": {
+                "text": "Average Gross of Movies",
+                "x": 0.05,
+                "xanchor": "left",
+            },
+            "xaxis": {"fixedrange": True},
+            "yaxis": {"fixedrange": True},
+            "colorway": ["#4661af"],
         },
     }
 
@@ -225,7 +281,7 @@ def update_charts(avocado_type, start_date, end_date):
             "colorway": ["#E12D39"],
         },
     }
-    return price_chart_figure, volume_chart_figure
+    return rating_chart_figure, gross_chart_figure, volume_chart_figure
 
 
 if __name__ == "__main__":
