@@ -13,6 +13,8 @@ From profit:
 Red: negative benefit
 Green: positive benefit
 
+The charts are intended for when you have at least one film from each decade. Right now the csv has 1009 films in total.
+
 The other sheet contains the following graphs
 - General:
   - Doughnut diagram of pending and viewed movies.
