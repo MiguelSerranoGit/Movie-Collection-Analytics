@@ -171,23 +171,23 @@ def show_info(movie, option):
         print('\tDuration: %s' % str(runtime))
     if option == 2:
         identifier = movie['id']
-        print('\tID: ' + str(identifier))
+        print('\tID: %s' % str(identifier))
         movie_title = movie['title']
         print('\tTitle: %s' % movie_title)
         movie_original_title = movie['original_title']
-        print('\tOriginal title: ' + movie_original_title)
+        print('\tOriginal title: %s' % movie_original_title)
         budget_movie = movie['budget']
-        print('\tBudget: ' + str(budget_movie))
+        print('\tBudget: %s' % str(budget_movie))
         gross_movie = movie['revenue']
-        print('\tGross: ' + str(gross_movie))
+        print('\tGross: %s' % str(gross_movie))
         benefit_movie = gross_movie - budget_movie
-        print('\tProfit: ' + str(benefit_movie))
+        print('\tProfit: %s' % str(benefit_movie))
         release_year = movie['release_date'][0:4]
-        print('\tYear: ' + release_year)
+        print('\tYear: %s' % release_year)
         score = movie['vote_average']
-        print('\tScore: ' + str(score))
+        print('\tScore: %s' % str(score))
         runtime = movie['runtime']
-        print('\tDuration: ' + str(runtime))
+        print('\tDuration: %s' % str(runtime))
     print('Do you want to add it?\n1) YES\n2) NO')
     answer1 = input()
     if int(answer1) == 1:
@@ -195,7 +195,7 @@ def show_info(movie, option):
         check_csv(2)
         add_movie(identifier, movie_title, movie_original_title, score, budget_movie, gross_movie,
                   benefit_movie, release_year, runtime)
-        print('Anything else you want to do?\n1) YES\n2) NO')
+        print('Do you want to do something else?\n1) YES\n2) NO')
         answer3 = input()
         while answer3 != str(1) or answer3 != str(2):
             if int(answer3) == 1:
