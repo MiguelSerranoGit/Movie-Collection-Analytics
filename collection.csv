@@ -1024,7 +1024,7 @@
 450465,Glass (Cristal),Glass,6.6,2019,20000000,246941965,226941965,Vista,129
 2976,Hairspray,Hairspray,6.7,2007,50000000,90450008,40450008,Vista,107
 2959,Hasta que el cura nos separe,License to Wed,5.7,2007,35000000,69307224,34307224,Vista,91
-623926,Hasta que la boda nos separe,Hasta que la boda nos separe,6.9,2020,0,0,0,Vista,110
+623926,Hasta que la boda nos separe,Hasta que la boda nos separe,6.9,2020,0,3306621,3306621,Vista,110
 426563,Holmes & Watson,Holmes & Watson,4.4,2018,42000000,40462793,-1537207,Vista,95
 2109,Hora punta,Rush Hour,6.9,1998,33000000,244386864,211386864,Vista,98
 5175,Hora punta 2,Rush Hour 2,6.6,2001,90000000,347325802,257325802,Vista,90
@@ -1034,7 +1034,7 @@
 101907,Hulk vs. Thor,Hulk vs. Thor,6.7,2009,0,0,0,Vista,45
 15257,Hulk vs Lobezno,Hulk vs. Wolverine,7.0,2009,0,0,0,Vista,37
 8355,Ice Age 3: El origen de los dinosaurios,Ice Age: Dawn of the Dinosaurs,6.7,2009,90000000,886686817,796686817,Vista,94
-347669,Incidencias,Incidencias,4.7,2015,0,0,0,Vista,90
+347669,Incidencias,Incidencias,4.7,2015,0,393060,393060,Vista,90
 25769,Infectados (Carriers),Carriers,5.8,2009,0,5802422,5802422,Vista,85
 1422,Infiltrados,The Departed,8.2,2006,90000000,291465000,201465000,Vista,149
 49018,Insidious,Insidious,6.9,2010,1500000,97009150,95509150,Vista,103
@@ -1047,5 +1047,72 @@
 207703,Kingsman: Servicio secreto,Kingsman: The Secret Service,7.6,2014,81000000,414351546,333351546,Vista,129
 287903,Krampus: Maldita Navidad,Krampus,6.1,2015,15000000,61788393,46788393,Vista,98
 310131,La bruja,The Witch,6.8,2015,3500000,40423945,36923945,Vista,93
-80184,La cara oculta,La cara oculta,7.2,2011,0,0,0,Vista,92
+80184,La cara oculta,La cara oculta,7.2,2011,2600000,7033931,4433931,Vista,92
 600,La chaqueta metálica,Full Metal Jacket,8.1,1987,30000000,46357676,16357676,Vista,120
+394830,La crucifixión,The Crucifixion,5.6,2017,0,6554322,6554322,Vista,90
+201085,La cumbre escarlata,Crimson Peak,6.6,2015,55000000,74679822,19679822,Vista,119
+223702,La fiesta de las salchichas,Sausage Party,5.7,2016,19000000,140705322,121705322,Vista,89
+8980,La gran aventura de Mortadelo y Filemón,La gran aventura de Mortadelo y Filemón,5.6,2003,0,0,0,Vista,88
+5595,La habitación de Fermat,La Habitación de Fermat,6.5,2007,0,0,0,Vista,90
+21208,La huérfana,Orphan,6.9,2009,20000000,77912251,57912251,Vista,123
+49494,La legión del águila,The Eagle,6.2,2011,25000000,27122040,2122040,Vista,114
+408220,La Liga de la Justicia Oscura,Justice League Dark,7.3,2017,0,0,0,Vista,75
+30061,La Liga de la Justicia: Crisis en dos tierras,Justice League: Crisis on Two Earths,7.3,2010,0,0,0,Vista,75
+10781,La matanza de Texas: El origen,The Texas Chainsaw Massacre: The Beginning,6.0,2006,16000000,51764406,35764406,Vista,90
+13640,La muerte de Superman,Superman: Doomsday,6.6,2007,3500000,0,-3500000,Vista,75
+487672,El Reinado de los Superhombres,Reign of the Supermen,7.1,2019,0,0,0,Vista,87
+9374,La muerte os sienta tan bien,Death Becomes Her,6.7,1992,55000000,149022650,94022650,Vista,104
+854,La máscara,The Mask,6.9,1994,23000000,351583407,328583407,Vista,101
+424139,La noche de Halloween,Halloween,6.5,2018,10000000,253688035,243688035,Vista,120
+10144,La Sirenita,The Little Mermaid,7.4,1989,40000000,211343479,171343479,Vista,83
+41505,La sombra de los otros,6 Souls,5.9,2010,22000000,851517,-21148483,Vista,112
+266856,La teoría del todo,The Theory of Everything,7.9,2014,15000000,123726688,108726688,Vista,123
+44040,La trampa del mal,Devil,6.0,2010,10000000,33583175,23583175,Vista,80
+65086,La mujer de negro,The Woman in Black,6.1,2012,17000000,127730736,110730736,Vista,95
+5876,La niebla,The Mist,6.8,2007,18000000,57096190,39096190,Vista,124
+442249,La primera purga: La noche de las bestias,The First Purge,6.0,2018,13000000,137056262,124056262,Vista,97
+22586,La princesa Cisne,The Swan Princess,6.6,1994,20000000,9771658,-10228342,Vista,95
+299687,La quinta ola,The 5th Wave,5.9,2016,38000000,109906372,71906372,Vista,112
+11249,La semilla de Chucky,Seed of Chucky,5.4,2004,12000000,24829644,12829644,Vista,87
+102362,La venganza del hombre muerto,Dead Man Down,6.1,2013,0,18074539,18074539,Vista,110
+11615,La vida de David Gale,The Life of David Gale,7.5,2003,50000000,38955598,-11044402,Vista,130
+298312,La visita,The Visit,6.3,2015,5000000,98450062,93450062,Vista,94
+471506,La viuda,Greta,6.6,2018,0,0,0,Vista,98
+10204,La vuelta al mundo en 80 días,Around the World in 80 Days,5.9,2004,110000000,72178895,-37821105,Vista,120
+18405,La última casa a la izquierda,The Last House on the Left,6.4,2009,15000000,32721635,17721635,Vista,110
+9703,La última legión,The Last Legion,5.5,2007,67000000,25303038,-41696962,Vista,110
+158011,La última llamada,The Call,6.7,2013,13000000,68572378,55572378,Vista,94
+22894,Legión,Legion,5.7,2010,26000000,67918658,41918658,Vista,100
+44912,Linterna Verde,Green Lantern,5.2,2011,200000000,219851172,19851172,Vista,114
+418078,Llega de noche,It Comes at Night,5.8,2017,5000000,19280931,14280931,Vista,92
+80278,Lo imposible,The Impossible,7.3,2012,45000000,198087212,153087212,Vista,107
+83289,Rivales,Rivales,6.0,2008,0,0,0,Vista,100
+97020,RoboCop,RoboCop,5.8,2014,120000000,242688965,122688965,Vista,113
+41733,Salidos de cuentas,Due Date,6.3,2010,65000000,211780824,146780824,Vista,95
+82525,Salvajes,Savages,6.4,2012,45000000,82966152,37966152,Vista,131
+298250,Saw VIII (Jigsaw),Jigsaw,6.2,2017,10000000,102952888,92952888,Vista,100
+4232,Scream (Vigila quién llama),Scream,7.3,1996,14000000,173046663,159046663,Vista,111
+4233,Scream 2,Scream 2,6.4,1997,24000000,172363301,148363301,Vista,122
+4234,Scream 3,Scream 3,5.9,2000,40000000,161834276,121834276,Vista,116
+41446,Scream 4,Scream 4,6.3,2011,40000000,97231420,57231420,Vista,111
+41283,Sed de venganza,Faster,6.3,2010,24000000,23081726,-918274,Vista,98
+13811,Señales del futuro,Knowing,6.1,2009,50000000,155446362,105446362,Vista,130
+11324,Shutter Island,Shutter Island,8.2,2010,80000000,294800000,214800000,Vista,104
+439015,Slender Man,Slender Man,4.3,2018,10000000,11817275,1817275,Vista,95
+2300,Space Jam,Space Jam,6.8,1996,80000000,250200000,170200000,Vista,87
+379686,Space Jam: A New Legacy,Space Jam: A New Legacy,0.0,2021,0,0,0,Pendiente,0
+35640,Spanish Movie,Spanish Movie,4.9,2009,33000000,6982465,-26017535,Vista,83
+1637,Speed: Máxima potencia,Speed,7.0,1994,30000000,350448145,320448145,Vista,115
+37686,Super 8,Super 8,6.7,2011,50000000,260095986,210095986,Vista,112
+11665,Superagente 86 de película,Get Smart,6.2,2008,80000000,230685453,150685453,Vista,110
+8363,Supersalidos,Superbad,7.1,2007,20000000,121463226,101463226,Vista,113
+37135,Tarzán,Tarzan,7.4,1999,130000000,448191819,318191819,Vista,88
+72105,Ted,Ted,6.4,2012,50000000,549368315,499368315,Vista,107
+214756,Ted 2,Ted 2,6.3,2015,68000000,215863606,147863606,Vista,115
+290859,Terminator: destino oscuro,Terminator: Dark Fate,6.6,2019,185000000,261119292,76119292,Vista,120
+218,Terminator,The Terminator,7.6,1984,6400000,78371200,71971200,Vista,108
+280,Terminator 2: el juicio final,Terminator 2: Judgment Day,8.0,1991,102000000,520000000,418000000,Vista,137
+296,Terminator 3: La rebelión de las máquinas,Terminator 3: Rise of the Machines,6.1,2003,200000000,435000000,235000000,Vista,109
+87101,Terminator Génesis,Terminator Genisys,5.9,2015,155000000,440603537,285603537,Vista,126
+534,Terminator: Salvation,Terminator Salvation,6.0,2009,200000000,371353001,171353001,Vista,115
+23168,The Town: Ciudad de ladrones,The Town,7.2,2010,37000000,154026136,117026136,Vista,125
